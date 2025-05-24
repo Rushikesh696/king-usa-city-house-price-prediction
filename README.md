@@ -1,4 +1,8 @@
 # King City, USA - House Price Prediction
+## Problem Statement
+Accurately predicting house prices is critical for buyers, sellers, real estate agents, and financial institutions. In King City, USA, diverse property attributes and market variability present a complex challenge for valuation. Traditional pricing methods often fail to account for non-linear relationships and hidden patterns in housing data.
+
+This project aims to build a machine learning model capable of predicting house prices based on historical sales data and property features. The goal is to evaluate multiple regression algorithms to identify the most accurate and generalizable model, ultimately supporting informed real estate decisions and enabling scalable, data-driven pricing solutions.
 
 This project focuses on predicting house prices in **King City, USA** using various regression algorithms. The goal is to develop a robust, generalizable model suitable for real-world deployment.
 
@@ -11,6 +15,23 @@ This project focuses on predicting house prices in **King City, USA** using vari
 - **Data Source**: Real estate dataset from King City, USA
 - **Objective**: Compare multiple machine learning models and select the best one based on accuracy and generalization.
 
+---
+## Model Building
+To identify the most effective regression algorithm for predicting house prices in King City, we implemented and evaluated a variety of machine learning models. Each model was trained using the same feature set and evaluated using R² scores on both training and testing datasets to ensure a fair comparison and assess generalization performance.
+**Algorithms Used**
+Linear Regression
+
+K-Nearest Neighbors (KNN) Regressor
+
+Support Vector Regressor (SVR)
+
+Decision Tree Regressor
+
+Random Forest Regressor
+
+Gradient Boosting Regressor (GBDT)
+
+XGBoost Regressor
 ---
 
 ## Models Evaluated
@@ -26,7 +47,15 @@ This project focuses on predicting house prices in **King City, USA** using vari
 | XGBoost           | 0.895       | 0.827      |
 
 ---
+Random Forest and XGBoost showed the best overall performance, combining high accuracy with strong generalization.
 
+Gradient Boosting also performed competitively, with balanced train-test performance.
+
+Simpler models like Linear Regression and KNN performed moderately but were outclassed by ensemble methods.
+
+SVR performed poorly and was unsuitable for this task.
+
+---
 ## Key Findings
 
 - **Top Models**: Random Forest and XGBoost, with **R² > 0.85** on test data.
